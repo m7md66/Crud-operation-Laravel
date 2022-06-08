@@ -1,0 +1,121 @@
+1- php artisan 
+
+2- php artisan make:controller --help
+
+3- php artisan make:controller PostController, StudentController
+-----------------------------------------
+
+connect --> database --> 
+    1- edit .env file 
+    2- create database 
+    3- create databse structre --> tables posts 
+
+    to deal with migrations files:
+
+    php artisan migrate --> implimntaion migration files 
+
+
+    to create table -->  php artisan make:migration create_posts_table
+
+    php artisan migrate:fresh 
+
+---------------------------------------------------
+model -->  single --> Post, Student
+
+model represenet --> record table --> Post 
+
+each table --> model
+
+table(posts) + model(Post) 
+
+MVC --> model view controller
+
+php artisan make:model Post
+------------------------------------------------------
+
+// my new table 
+
+php artisan make:migration create_articles_table
+
+php artisan migrate
+
+// views  
+
+// routing + controller + model
+
+
+php artisan make:controller ArticleController --resource -m Article
+
+crud oper. 
+
+
+
+// index create store edit update destroy show
+
+
+tips to install simple authintecation:
+
+1- composer require laravel/ui
+2- php artisan ui bootstrap -- auth
+3- npm install 
+4- npm run dev
+---------------------------------------
+
+users articles 
+
+user --> article --> 
+
+one to many 
+
+
+1- table articles --> userid
+
+2- one to many ---> one --> belongsTo 
+                    many --> hasMany
+
+3- article --> store --> title desc num 
+
+
+
+
+4- user --> user 
+            admin 
+
+    user --> test
+    admin all 
+
+    column --> role -->  enum --> ["user", "admin"]
+
+    --> store --> role 
+
+
+
+
+courses 
+
+
+user --> teacher + student + admin 
+
+teacher --> crud course 
+
+
+student --> courses --> course --> button enroll --> relation
+
+student + course 
+
+many to many --> table 3 --> student course -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
